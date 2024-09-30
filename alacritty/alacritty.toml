@@ -1,0 +1,30 @@
+# color theme
+import = [
+    #"~/.config/alacritty/themes/themes/hardhacker.toml"
+    "~/.config/alacritty/themes/themes/gruvbox.toml"
+]
+
+[window]
+dimensions.columns = 90 
+dimensions.lines = 20
+
+padding.x = 10
+padding.y = 5 
+
+decorations = "Full"
+
+opacity = 1
+
+title = "(づ｡◕‿‿◕｡)づ"
+dynamic_title = false
+
+decorations_theme_variant = "None"
+
+[font]
+size = 14.0
+
+# should prob just edit dirrectly in theme config
+[colors]
+
+[cursor]
+

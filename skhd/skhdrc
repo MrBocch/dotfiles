@@ -1,0 +1,70 @@
+# https://www.youtube.com/watch?v=k94qImbFKWE&t=911s
+# following this video 
+
+# alt is the option key
+# why does it not work when have a 
+# firefox browser, but for terminals it works fine 
+# it was not wokring bc i set it up 
+# alt - h : ...
+# alt - h : ... bruh so dumb
+
+
+
+# changing window focus
+
+# from within a space
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - h : yabai -m window --focus west 
+alt - l : yabai -m window --focus east
+
+# switch between monitors
+alt - s: yabai -m display --focus west
+alt - g: yabai -m display --focus east
+
+
+# modify layout
+
+# rotate clockwise
+shift + alt - r : yabai -m space --rotate 270
+
+# flip along y-axis
+shift + alt - y : yabai -m space --mirror y-axis
+
+# flip along x-axis
+shift + alt - x : yabai -m space --mirror x-axis
+
+# toggle window float 
+shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+
+# modify window size 
+shift + alt - m : yabai -m window --toggle zoom-fullscreen
+
+# all windows same size 
+shift + alt - e : yabai -m space --balance
+
+
+# swap windows
+shift + alt - j : yabai -m window --swap south
+shift + alt - k : yabai -m window --swap north 
+shift + alt - h : yabai -m window --swap west
+shift + alt - l : yabai -m window --swap east
+
+# move window and spilt 
+
+# move window to display left and right 
+
+# move window to prev and next space 
+shift + alt - p : yabai -m window --space prev;
+shift + alt - n : yabai -m window --space next;
+
+# move window to space with number
+shift + alt - 1 : yabai -m window --space 1;
+shift + alt - 2 : yabai -m window --space 2;
+shift + alt - 3 : yabai -m window --space 3;
+
+
+# start/stop yabai 
+ctrl + alt - q : yabai --stop-service
+ctrl + alt - s : yabai --start-service

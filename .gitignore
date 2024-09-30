@@ -1,0 +1,21 @@
+.DS_Store
+
+# should probably ignore this for security
+.gitconfig
+
+# i dont use any of these so ignore them
+GNS3
+iterm2
+peazip
+wireshark
+
+# not a fish shell thing, this is conda thing for some reason
+fish 
+
+# i dont know what haskell compiler needs config files for, maybe is just for 
+# saving history (this should be private)
+ghc
+
+# so much junk temp files, and AI prompts that should be private
+zed/*
+!zed/settings.json
