@@ -42,8 +42,11 @@ export PATH="$PATH:/Applications/godot.app/Contents/MacOS"
 # racket
 export PATH="$PATH:/Applications/Racket v8.12/bin"
 
+# sometimes you dont want to open tmux
+# like when you open terminal in zed or code editor
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-  tmux attach-session -t default || tmux new-session -s default
+      SESSION_NAME=$(date +"%M:%S")
+	  tmux new-session -s "$SESSION_NAME"
 fi
 
 # alot of this stuff is just junk 
