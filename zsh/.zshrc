@@ -22,6 +22,10 @@ alias cli-dict="ruby /Users/jorge/code/ruby/cli-dict/src/main.rb"
 alias time-track="ruby /Users/jorge/code/ruby/time-track/src/main.rb"
 alias raptor="(cd /Applications/raptor && sh run.sh)"
 
+# i found this cool script, cli translator
+# alias trans="/usr/local/bin/trans"
+# realised adding the alias is redundant lool 
+
 # for ani-cli
 export PATH="$PATH:/Applications/IINA.app/Contents/MacOS"
 #
