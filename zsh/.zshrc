@@ -48,10 +48,18 @@ export PATH="$PATH:/Applications/Racket v8.12/bin"
 
 # sometimes you dont want to open tmux
 # like when you open terminal in zed or code editor
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-      SESSION_NAME=$(date +"%M:%S")
-	  tmux new-session -s "$SESSION_NAME"
+
+if command -v tmux > /dev/null && [ -z "$TMUX" ]; then
+  # Find the next available session number
+  session_num=1
+  while tmux has-session -t "s$session_num" 2>/dev/null; do
+    session_num=$((session_num + 1))
+  done
+  
+  # Start a new session with the next available number
+  tmux new-session -s "s$session_num"
 fi
+
 
 # alot of this stuff is just junk 
 # that programs add into your config file
