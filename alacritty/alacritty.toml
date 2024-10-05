@@ -21,7 +21,11 @@ dynamic_title = false
 decorations_theme_variant = "None"
 
 [font]
-size = 14.0
+normal = { family = "APL385 Unicode", style = "Regular" }
+bold   = { family = "APL385 Unicode", style = "Bold" }
+italic = { family = "APL385 Unicode", style = "Italic" }
+
+size = 15.0
 
 # should prob just edit dirrectly in theme config
 [colors]
