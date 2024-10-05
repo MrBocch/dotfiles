@@ -21,7 +21,7 @@
         "diagnostics": false,
         "metrics": false
     },
-    "theme": "Graphene",
+    "theme": "Catppuccin Mocha",
     "ui_font_size": 16,
     "buffer_font_family": "APL385 Unicode",
     "buffer_font_size": 16,
