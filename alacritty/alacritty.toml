@@ -1,11 +1,11 @@
 # color theme
 import = [
-    #"~/.config/alacritty/themes/themes/pencil_light.toml"
-    "~/.config/alacritty/themes/themes/gruvbox.toml"
+    "~/.config/alacritty/themes/themes/solarized_light.toml"
+    #"~/.config/alacritty/themes/themes/gruvbox.toml"
 ]
 
 [window]
-decorations_theme_variant = "Dark"
+decorations_theme_variant = "light"
 
 dimensions.columns = 90 
 dimensions.lines = 20
@@ -26,7 +26,7 @@ normal = { family = "APL385 Unicode", style = "Regular" }
 bold   = { family = "APL385 Unicode", style = "Bold" }
 italic = { family = "APL385 Unicode", style = "Italic" }
 
-size = 15.0
+size = 16.0
 
 offset = { x=-1, y=0 }
 
