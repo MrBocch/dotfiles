@@ -38,7 +38,10 @@ export PATH="$PATH:/Applications/love.app/Contents/Macos"
 export GIT_CONFIG=~/.config/.gitconfig
 
 # for hugo
-export PATH="$PATH:/Applications/hugo_extended_0.125.7_darwin-universal/"
+export PATH="$PATH:/Applications/hugo_extended_0.125.7_darwin-universal"
+
+# for pocketbase
+export PATH="$PATH:/Applications/pocketbase"
 
 # godot
 export PATH="$PATH:/Applications/godot.app/Contents/MacOS"
