@@ -1,11 +1,11 @@
 # color theme
 import = [
-    "~/.config/alacritty/themes/themes/solarized_light.toml"
-    #"~/.config/alacritty/themes/themes/gruvbox.toml"
+    #"~/.config/alacritty/themes/themes/solarized_light.toml"
+    "~/.config/alacritty/themes/themes/catppuccin_mocha.toml"
 ]
 
 [window]
-decorations_theme_variant = "light"
+decorations_theme_variant = "dark"
 
 dimensions.columns = 90 
 dimensions.lines = 20
