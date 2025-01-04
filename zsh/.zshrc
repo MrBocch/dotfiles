@@ -21,7 +21,7 @@ alias vim="nvim"
 alias cli-dict="ruby /Users/jorge/code/ruby/cli-dict/src/main.rb"
 alias time-track="ruby /Users/jorge/code/ruby/time-track/src/main.rb"
 alias raptor="(cd /Applications/raptor && sh run.sh)"
-
+alias flow='(cd /Applications/flow && pnpm dev)> /dev/null 2>&1 & open http://localhost:7127'
 # i found this cool script, cli translator
 # alias trans="/usr/local/bin/trans"
 # realised adding the alias is redundant lool 
