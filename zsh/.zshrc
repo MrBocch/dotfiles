@@ -15,13 +15,12 @@ export VISUAL=nvim;
 export EDITOR=nvim;
 
 alias ls="ls -G"
-
 alias vim="nvim"
-
 alias cli-dict="ruby /Users/jorge/code/ruby/cli-dict/src/main.rb"
 alias time-track="ruby /Users/jorge/code/ruby/time-track/src/main.rb"
-alias raptor="(cd /Applications/raptor && sh run.sh)"
-alias flow='(cd /Applications/flow && pnpm dev)> /dev/null 2>&1 & open http://localhost:7127'
+alias py="uv run"
+alias elm-land="pnpm dlx elm-land"
+# alias raptor="(cd /Applications/raptor && sh run.sh)" never used it once
 # i found this cool script, cli translator
 # alias trans="/usr/local/bin/trans"
 # realised adding the alias is redundant lool 
@@ -74,11 +73,13 @@ export PATH="$PATH:$HOME/.rvm/bin"
 eval "$(rbenv init - zsh)"
 
 # add this to path?
+# why did i add this to path?
 export PATH="$PATH:$HOME/Library/Python/3.9/bin"
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# uninstalled pyenv for uv
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 
 
 
@@ -126,17 +127,3 @@ export PATH="$PATH:$HOME/.rvm/bin"
 #
 #
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Applications/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Applications/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Applications/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Applications/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
