@@ -8,15 +8,18 @@
 # alot of the stuff is things idont even use and its pissing me off
 # https://www.youtube.com/watch?v=yy8RoDSdhIQ
 
-PS1="%F{red}%~> %f"
+PS1="%F{red}%~ λ %f"
+# λ ⌖  ψ  ⚜  ϕ ♥ 🂱 
 
 # this is so ranger opens nvim instead of vim
-export VISUAL=nvim;
-export EDITOR=nvim;
+export EDITOR="hx";
+export VISUAL="$EDITOR";
+
+cli-dict() {
+  ruby /Users/jorge/code/ruby/cli-dict/src/main.rb "$@" | less 
+}
 
 alias ls="ls -G"
-alias vim="nvim"
-alias cli-dict="ruby /Users/jorge/code/ruby/cli-dict/src/main.rb"
 alias time-track="ruby /Users/jorge/code/ruby/time-track/src/main.rb"
 alias py="uv run"
 alias elm-land="pnpm dlx elm-land"
@@ -27,7 +30,14 @@ alias elm-land="pnpm dlx elm-land"
 
 # for ani-cli
 export PATH="$PATH:/Applications/IINA.app/Contents/MacOS"
-#
+
+export PATH="/Users/jorge/code/flutter/flutter/bin:$PATH"
+export PATH="$PATH:/Applications/Cursor.app/Contents/MacOS"
+
+export PATH="$PATH:/Applications/SameBoy.app/Contents/MacOS"
+export PATH="$PATH:/Users/jorge/.config/emacs/bin"
+export PATH="$PATH:/Users/jorge/go/bin"
+
 # ani-cli update hsts
 alias ani-cli-up="cd .local/state/ani-cli && git add . && git commit -m "update ani-hsts" && git push" 
 
@@ -74,7 +84,7 @@ eval "$(rbenv init - zsh)"
 
 # add this to path?
 # why did i add this to path?
-export PATH="$PATH:$HOME/Library/Python/3.9/bin"
+# export PATH="$PATH:$HOME/Library/Python/3.9/bin"
 
 # uninstalled pyenv for uv
 # export PYENV_ROOT="$HOME/.pyenv"
@@ -91,7 +101,15 @@ export PATH="$PATH:$HOME/Library/Python/3.9/bin"
 export PATH="$PATH:$HOME/.rvm/bin"
 . "$HOME/.cargo/env"
 
+# bun completions
+[ -s "/Users/jorge/.bun/_bun" ] && source "/Users/jorge/.bun/_bun"
 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# deno
+export PATH="$PATH:/Users/jorge/.deno/bin"
 #
 #For the system Java wrappers to find this JDK, symlink it with
 #sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk

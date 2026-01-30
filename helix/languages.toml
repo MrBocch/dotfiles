@@ -1,0 +1,17 @@
+[[language]]
+name = "elm"
+language-servers = ["elmLS"]
+formatter = { command = "elm-format", args = ["--stdin"] }
+
+[language-server.elmLS]
+command = "elm-language-server"
+args = ["--stdio"]
+
+[[grammar]]
+name = "asm"
+source = { git = "https://github.com/SethBarberee/tree-sitter-asm", rev = "master" }
+[[language]]
+name = "asm"
+scope = "source.asm"
+file-types = ["s", "asm", "S"]
+comment-token = ";"

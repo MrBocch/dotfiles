@@ -1,8 +1,8 @@
 # color theme
 import = [
     #"~/.config/alacritty/themes/themes/solarized_light.toml"
-    #"~/.config/alacritty/themes/themes/gruvbox_dark.toml"
-    "~/.config/alacritty/themes/themes/ayu_dark.toml"
+    "~/.config/alacritty/themes/themes/gruvbox_dark.toml"
+    #~/.config/alacritty/themes/themes/ayu_dark.toml"
 ]
 
 [window]
@@ -22,13 +22,15 @@ title = "(づ｡◕‿‿◕｡)づ"
 dynamic_title = false
 
 [font]
-normal = { family = "IosevkaTerm Nerd Font Propo", style = "Regular" }
-# bold   = { family = "APL2741", style = "Bold" }
+# normal = { family = "IosevkaTerm Nerd Font Propo", style = "Regular" }
+normal = { family = "Comic Mono"}
+# normal = { family = "APL385 Unicode", style = "Regular" }
+# normal = { family = "Uiua386" }
 
 size = 16.0
 # test
 # testing 
-# offset = { x=1, y=-1 }
+# offset = { x=-3 }
 
 # should prob just edit dirrectly in theme config
 [colors]

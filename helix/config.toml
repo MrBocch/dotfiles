@@ -1,1 +1,5 @@
-theme = "ayu_dark"
+theme = "gruvbox"
+
+[editor]
+line-number = "relative"
+

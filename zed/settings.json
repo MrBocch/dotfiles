@@ -22,7 +22,7 @@
             "provider": "zed.dev",
             "model": "claude-3-5-sonnet-latest"
         },
-        "version": "2"
+        // "version": "2"
     },
     "project_panel": {
         "dock": "right"
@@ -31,7 +31,7 @@
         "diagnostics": false,
         "metrics": false
     },
-    "theme": "Gruvbox Light Hard",
+    "theme": "Gruvbox ish Dark Hard",
     "ui_font_size": 16,
     "buffer_font_family": "IosevkaTerm Nerd Font Mono",
     //"buffer_font_family": "APL385 Unicode",
@@ -39,7 +39,7 @@
     "buffer_font_size": 18.0,
     "relative_line_numbers": true,
     "vim_mode": true,
-    "liga": false,
+    // "liga": false,
     "tab_size": 4,
     "format_on_save": "off",
 
@@ -47,6 +47,6 @@
         "calt": false
     },
 
-    "editor.quickSuggestions": false,
-    "editor.suggestOnTriggerCharacters": false
+    // "editor.quickSuggestions": false,
+    // "editor.suggestOnTriggerCharacters": false
 }
